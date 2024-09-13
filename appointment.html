@@ -99,35 +99,36 @@
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4">Make Appointment</h1>
-                                <form>
+                                <form action="https://api.web3forms.com/submit" method="POST">
                                     <div class="row g-3">
+                                        <input type="hidden" name="access_key" value="e52254ec-bb20-4b75-96bb-02066c943d21">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                                <label for="gname">Gurdian Name</label>
+                                                <input type="text" name="Guardian name" class="form-control border-0" id="gname" placeholder="Guardian Name" required>
+                                                <label for="gname">Guardian Name</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email">
-                                                <label for="gmail">Gurdian Email</label>
+                                                <input type="email" name="Guardian email" class="form-control border-0" id="gmail" placeholder="Guardian Email" required>
+                                                <label for="gmail">Guardian Email</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
+                                                <input type="text" name="child name" class="form-control border-0" id="cname" placeholder="Child Name" required>
                                                 <label for="cname">Child Name</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
+                                                <input type="text" name="child age" class="form-control border-0" id="cage" placeholder="Child Age" required>
                                                 <label for="cage">Child Age</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                                <textarea class="form-control border-0" name="message" placeholder="Leave a message here" id="message" style="height: 100px" required></textarea>
                                                 <label for="message">Message</label>
                                             </div>
                                         </div>
